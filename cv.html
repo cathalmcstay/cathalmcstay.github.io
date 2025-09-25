@@ -6,21 +6,394 @@
   <title>Cathal McStay | CV</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="poetry.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Curriculum Vitae</h1>
-    <p>Here you can find my CV.</p>
-  </main>
+  <div class="page-container">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="cv-page">
+      <!-- Header / Profile / Skills -->
+      <section class="cv-card">
+        <div class="cv-header-row">
+          <div>
+            <h1 class="cv-name">Cathal McStay</h1>
+            <p class="cv-subtitle">PhD Researcher @ EPCC, University of Edinburgh</p>
+          </div>
+          <ul class="cv-contact">
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:C.McStay@sms.ed.ac.uk">C.McStay@sms.ed.ac.uk</a></li>
+            <li><i class="fa-brands fa-github"></i><a href="https://github.com/cathalmcstay" target="_blank">github.com/cathalmcstay</a></li>
+            <li><i class="fa-brands fa-linkedin"></i><a href="https://uk.linkedin.com/in/cathal-mcstay-b0616820a" target="_blank">LinkedIn</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>Edinburgh, UK</li>
+          </ul>
+        </div>
+
+        <div class="cv-profile">
+          <h2 class="cv-h2"><i class="fa-regular fa-id-badge"></i> Profile</h2>
+          <p>
+            I am a PhD student at EPCC and my research project is supporting heterogenous architectures for ASiMoV-CCS.
+            Interests include HPC performance engineering, accelerators (GPUs/FPGAs), algorithm analysis, and formal methods.
+            Previously: MEng Computer Science (First Class) at Queen’s University Belfast; research assistant at CSIT; IT intern at KPMG in Dublin.
+          </p>
+        </div>
+
+        <div class="cv-skills">
+          <h2 class="cv-h2"><i class="fa-solid fa-wand-magic-sparkles"></i> Key Skills</h2>
+          <ul class="cv-tags">
+            <li>High-Performance Computing</li>
+            <li>Parallel Programming</li>
+            <li>C</li>
+            <li>MPI / OpenMP</li>
+            <li>Cybersecurity</li>
+            <li>Python</li>
+            <li>Data Analysis</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="cv-card">
+        <h2 class="cv-h2"><i class="fa-solid fa-briefcase"></i> Experience</h2>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>PhD Researcher — EPCC, University of Edinburgh</h3>
+            <span class="cv-meta">Sep 2025 — Present · Edinburgh, UK</span>
+          </header>
+          <p>
+            Supporting heterogeneous architectures in ASiMoV-CCS (CFD).
+          </p>
+          <ul class="cv-bullets">
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Research Assistant — CSIT, Queen’s University Belfast</h3>
+            <span class="cv-meta">Feb 2025 — Jul 2025 · Belfast, UK</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Created a Python simulation tool for generating synthetic data to train cybersecurity-focused LLMs.</li>
+            <li>Conducted feasibility analysis of LLM-based synthetic data generation.</li>
+            <li>Developed literature review on current research around synthetic data and comparison metrics.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Demonstrator — School of EEECS, Queen’s University Belfast</h3>
+            <span class="cv-meta">Sep 2023 — Apr 2025 · Belfast, UK</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Supported students in tutorials across key computer science topics including Data Structures, OOP, Cyber Security, and UX Design.</li>
+            <li>Helped simplify complex concepts like sorting algorithms, inheritance, and encryption through hands-on guidance.</li>
+            <li>Encouraged problem-solving and independent thinking during coding exercises and labs.</li>
+            <li>Delivered interactive sessions to build student confidence and technical understanding.</li>
+            <li>Promoted a positive learning environment through clear communication and one-on-one support.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>IT Intern — KPMG</h3>
+            <span class="cv-meta">Sep 2022 — Nov 2023 · Dublin, Ireland</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Built internal tools using PHP, SQL, Python, and Flask to help teams work more efficiently.</li>
+            <li>Took the lead on small development projects, from gathering requirements to final deployment.</li>
+            <li>Worked in Agile teams, joined daily stand-ups, sprints, and regular feedback sessions.</li>
+            <li>Presented my work in team meetings, learning to explain technical ideas clearly and take on feedback.</li>
+            <li>Gained confidence in both technical skills and soft skills like communication, teamwork, and adaptability.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Volunteering -->
+      <section class="cv-card">
+        <h2 class="cv-h2"><i class="fa-regular fa-handshake"></i> Volunteering</h2>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Lead Peer Mentor — Queen’s University Belfast</h3>
+            <span class="cv-meta">Sep 2024 — June 2025 · Belfast, UK</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Provided guidance and support to a team of peer mentors.</li>
+            <li>Organised training sessions and workshops to enhance mentoring skills.</li>
+            <li>Facilitated communication between students and academic staff.</li>
+          </ul>
+        </article>
+
+         <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Student Volunteer — ISC High Performance</h3>
+            <span class="cv-meta">May 2024 · Hamburg, Germany</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Supported the running of Europe’s leading HPC conference, assisting with logistics and session coordination.</li>
+            <li>Engaged with professionals and researchers across the HPC community, building valuable connections and insights.</li>
+            <li>Attended seminars and workshops on cutting-edge topics including HPC architecture, quantum computing, software development, and LLMs.</li>
+            <li>Gained a deeper understanding of the current landscape and future direction of high-performance computing.</li>
+            <li>Collaborated with fellow student volunteers, contributing to a smooth and successful event experience.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Peer Mentor — Queen’s University Belfast</h3>
+            <span class="cv-meta">Sep 2022 — June 2024 · Belfast, UK</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Provided academic and pastoral support to first-year computer science students.</li>
+            <li>Organised social events to build community and ease transition to university life.</li>
+            <li>Developed strong communication, leadership, and problem-solving skills.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Course Representative — Queen’s University Belfast</h3>
+            <span class="cv-meta">Sep 2022 — June 2025 · Belfast, UK</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Acted as the key point of contact between students and academic staff, representing student views on course content, assessments, and teaching quality.</li>
+            <li>Attended regular staff–student consultative meetings to raise feedback and suggest improvements.</li>
+            <li>Helped create a more supportive academic environment by ensuring student concerns were heard and addressed.</li>
+            <li>Communicated clearly and respectfully with both peers and university staff, promoting transparency and collaboration.</li>
+            <li>Contributed to improvements in module delivery and student experience through consistent engagement.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- Certificates -->
+      <section class="cv-card">
+        <h2 class="cv-h2"><i class="fa-solid fa-certificate"></i> Certificates & Awards</h2>
+        <ul class="cv-bullets">
+          <!-- Replace examples below with your actual certificates -->
+          <li><em>Associate Fellow of the Higher Education Academy</em> — from July 2025</li>
+        </ul>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-card">
+        <h2 class="cv-h2"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>PhD (In Progress) — High-Performance Computing</h3>
+            <span class="cv-meta">Sep 2025 — Present · EPCC, University of Edinburgh</span>
+          </header>
+          <p>Focus: Supporting heterogeneous architectures in ASiMoV-CCS (CFD).</p>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>MEng Computer Science — First Class Honours</h3>
+            <span class="cv-meta">Sep 2020 — May 2025 · Queen’s University Belfast</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Interests: HPC, FPGAs, parallel computing, algorithm analysis.</li>
+            <li>Activities: Lead Peer Mentor; Demonstrator; engagement with CS community.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>A-Levels — AABB</h3>
+            <span class="cv-meta">Sep 2018 — May 2020 · Abbey Grammar School, Newry</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Subjects: English Literature, Digital Technology, Computer Science, Irish.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Employment History -->
+      <section class="cv-card">
+        <h2 class="cv-h2"><i class="fa-solid fa-briefcase"></i> Employment History</h2>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Resident Assistant — The University of Edinburgh</h3>
+            <span class="cv-meta">Aug 2025 – Present · Edinburgh, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Support student wellbeing and community building in University accommodation.</li>
+            <li>On-call rota, incident triage, and liaison with university services.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Seasonal Assistant — Lisburn &amp; Castlereagh City Council</h3>
+            <span class="cv-meta">May 2025 – Aug 2025 · Hillsborough, UK · Temporary</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Welcomed visitors and provided clear guidance on park facilities, trails, and events.</li>
+            <li>Handled diverse enquiries and promoted local activities to enhance visitor experience.</li>
+            <li>Worked independently and within a small team during peak periods.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Research Assistant — CSIT (Queen’s University Belfast)</h3>
+            <span class="cv-meta">Feb 2025 – Jul 2025 · Belfast, UK · Internship</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Built a Python simulation tool to generate synthetic data for cybersecurity-focused LLMs.</li>
+            <li>Completed feasibility analysis on LLM-based synthetic data generation and comparison metrics.</li>
+            <li>Produced a structured literature review and contributed to experiment design.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Digital Technology Tutor — Queen’s University Belfast</h3>
+            <span class="cv-meta">Feb 2025 – May 2025 · Temporary</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Delivered tailored A-Level IT lessons, simplifying complex topics into clear, actionable steps.</li>
+            <li>Adapted plans to learner needs; fostered engagement and confidence.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Irish Tutor — Queen’s University Belfast</h3>
+            <span class="cv-meta">Feb 2025 – May 2025 · Temporary</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Weekly one-to-one support in grammar, vocabulary, and conversation.</li>
+            <li>Prepared short lessons and practice materials; tracked steady progress.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Demonstrator — School of EEECS, Queen’s University Belfast</h3>
+            <span class="cv-meta">Sep 2023 – Apr 2025 · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Supported tutorials in Data Structures, OOP, Cyber Security, and UX Design.</li>
+            <li>Encouraged problem-solving and independent thinking in labs and exercises.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Retail Store Advisor — O2 (Telefónica UK)</h3>
+            <span class="cv-meta">Mar 2024 – Feb 2025 · Belfast, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Advised on devices, plans, and services; maintained strong product knowledge.</li>
+            <li>Delivered great customer service and exceeded sales targets in final two months.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Sales Advisor — EE</h3>
+            <span class="cv-meta">Aug 2023 – Feb 2024 · Newry, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Guided customers on mobile and broadband; device setup and billing support.</li>
+            <li>Met individual/team sales targets; maintained organised, up-to-date displays.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Information Technology Intern — KPMG</h3>
+            <span class="cv-meta">Sep 2022 – Nov 2023 · Dublin, Ireland · Internship</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Built internal tools with PHP, SQL, Python, and Flask to improve team efficiency.</li>
+            <li>Worked in Agile teams; presented work and iterated based on feedback.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Temporary Sales Assistant — Currys plc</h3>
+            <span class="cv-meta">Oct 2022 – Dec 2022 · Newry, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Advised on consumer tech; maintained current product knowledge and merchandising.</li>
+            <li>Contributed to sales targets; supported stock and promotional displays.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Sales Advisor — EE</h3>
+            <span class="cv-meta">Jan 2022 – Aug 2022 · Newry, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Resolved customer queries; supported upgrades and billing issues.</li>
+            <li>Met targets while maintaining accuracy during busy periods.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Information Technology Tutor — Queen’s University Belfast</h3>
+            <span class="cv-meta">Mar 2022 – May 2022 · Temporary</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Tailored IT lessons for an A-Level student; improved digital skills and exam readiness.</li>
+            <li>Built a supportive learning environment; adapted content to progress.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Customer Consultant — Carphone Warehouse (Currys plc)</h3>
+            <span class="cv-meta">Jul 2021 – Dec 2021 · Newry, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Matched customers to mobile/broadband solutions; handled transactions and records.</li>
+            <li>Maintained accurate data and a tidy, well-presented shop floor.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Sandwich Artist — Subway</h3>
+            <span class="cv-meta">Aug 2018 – Jun 2021 · Newry, UK · Part-time</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Worked in a fast-paced setting; maintained hygiene standards and completed cleaning duties.</li>
+            <li>Handled cashing up, opening/closing, and inventory restocking responsibilities.</li>
+          </ul>
+        </article>
+
+        <article class="cv-item">
+          <header class="cv-item-head">
+            <h3>Ceannaire — St. John’s Bosco</h3>
+            <span class="cv-meta">Jun 2019 · Newry, UK · Temporary</span>
+          </header>
+          <ul class="cv-bullets">
+            <li>Helped deliver a safe, engaging learning environment for primary school children.</li>
+            <li>Facilitated outdoor activities and supported language development in English and Irish.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Cathal McStay. All rights reserved.</p>
+      <p>Follow me on <a href="https://twitter.com/McstayCathal">Twitter</a> | 
+      <a href="https://github.com/cathalmcstay">GitHub</a> | 
+      <a href="https://uk.linkedin.com/in/cathal-mcstay-b0616820a">LinkedIn</a></p>
+    </footer>
+  </div>
 </body>
 </html>
